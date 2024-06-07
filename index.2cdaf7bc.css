@@ -1,0 +1,32 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, div, span, a, table, tr, th, td, form, input, textarea, button, blockquote, pre, code, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars__star {
+  content: "";
+  background: url("star.fa806e3c.svg") center no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.stars__star:first-of-type {
+  margin-right: 2px;
+}
+
+.stars__star:last-of-type {
+  margin-left: 2px;
+}
+
+.stars__star:not(.stars__star:first-of-type, .stars__star:last-of-type) {
+  margin-inline: 2px;
+}
+
+.stars--1 .stars__star:nth-child(-n+1), .stars--2 .stars__star:nth-child(-n+2), .stars--3 .stars__star:nth-child(-n+3), .stars--4 .stars__star:nth-child(-n+4), .stars--5 .stars__star:nth-child(-n+5) {
+  background: url("star-active.2be54011.svg") center no-repeat;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
